@@ -184,7 +184,7 @@ footer h6 {
 }
 
 .customer-page {
-    background-image: url('/images/background/customer_background.jpg');
+    background-image: url('../images/background/customer_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
