@@ -30,10 +30,6 @@ a {
     padding-right: 1.5rem;
 }
 
-.nav-link:hover {
-    color: #ffc107 !important;
-}
-
 .hero-section {
     background: url('../images/background/background.jpg') no-repeat center center/cover;
     height: 100vh;

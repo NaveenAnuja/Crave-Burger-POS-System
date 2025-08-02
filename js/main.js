@@ -258,7 +258,7 @@ let customerName = '';
 
 function setCurrentCustomerDetails() {
     const currentCustomer = JSON.parse(localStorage.getItem('currentCustomer'));
-    
+
     if (currentCustomer) {
         customerName = currentCustomer.firstName + ' ' + currentCustomer.lastName;
     } else {
@@ -266,8 +266,19 @@ function setCurrentCustomerDetails() {
     }
 }
 
-document.getElementById('logoutButton').addEventListener('click', function(e) {
+document.getElementById('logoutButton').addEventListener('click', function (e) {
     e.preventDefault();
     localStorage.removeItem('currentCustomer');
     window.location.href = 'login.html';
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+        });
+    });
 });
