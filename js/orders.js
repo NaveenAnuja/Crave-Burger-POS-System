@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             confirmButtonText: 'OK'
         }).then(() => {
 
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         });
     });
 });

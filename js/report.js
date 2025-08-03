@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('logoutButton').addEventListener('click', () => {
         localStorage.removeItem('authToken');
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     });
 });
 
@@ -129,6 +129,6 @@ document.getElementById('logoutButton').addEventListener('click', function (e) {
         confirmButtonText: 'OK'
     }).then(() => {
     
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     });
 });

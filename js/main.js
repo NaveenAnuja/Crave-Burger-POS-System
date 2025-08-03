@@ -269,7 +269,7 @@ function setCurrentCustomerDetails() {
 document.getElementById('logoutButton').addEventListener('click', function (e) {
     e.preventDefault();
     localStorage.removeItem('currentCustomer');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 });
 
 document.addEventListener("DOMContentLoaded", () => {
