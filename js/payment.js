@@ -79,16 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             switch (cardType) {
                 case 'visa':
-                    cardIcon.src = 'assets/images/cards/visa.png';
+                    cardIcon.src = 'images/cards/visa.png';
                     break;
                 case 'master':
-                    cardIcon.src = 'assets/images/cards/master.png';
+                    cardIcon.src = 'images/cards/master.png';
                     break;
                 case 'american-express':
-                    cardIcon.src = 'assets/images/cards/american-express.png';
+                    cardIcon.src = 'images/cards/american-express.png';
                     break;
                 default:
-                    cardIcon.src = 'assets/images/cards/default.png';
+                    cardIcon.src = 'images/cards/default.png';
             }
         });
     }
