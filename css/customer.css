@@ -1,51 +1,29 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e0e0e0 100%);
+/* General Styles */
+body.customer-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    background-image: url('../images/background/customer_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
-header {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-main {
-    flex: 1;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Navbar */
 .navbar-brand {
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.navbar-brand img {
+.navbar img {
+    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
@@ -54,7 +32,7 @@ main {
 }
 
 .nav-link {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-right: 1.5rem;
 }
 
@@ -62,144 +40,37 @@ main {
     color: #ffc107 !important;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 20px;
+/* Main Container */
+main.container {
+    flex: 1;
+    padding: 2rem 1rem;
+    margin-top: 100px;
+    margin-bottom: 80px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+    border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.customer-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.customer-section h3 {
-    font-size: 1.8rem;
-    color: #343a40;
-    margin-bottom: 20px;
-}
-
-.customer-section p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.customer-section span {
-    font-weight: bold;
-}
-
-button {
-    font-size: 1.1rem;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    backdrop-filter: blur(5px);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin: 15px;
-}
-
-button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-}
-
-
-#card-details-section div {
-    background-color: #e9ecef;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-#card-details-section p {
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-#bought-items div {
-    background-color: #e9ecef;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-textarea {
     width: 100%;
-    height: 100px;
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-footer {
-    width: 100%;
-    background-color: rgba(52, 58, 64, 0.7);
-    backdrop-filter: blur(10px);
-    color: #ffc107;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    top: 1050px;
-    left: 0;
-    z-index: 1000;
-}
-
-footer h6 {
-    margin: 0;
-    font-size: 1rem;
-}
-
-.customer-page {
-    background-image: url('../images/background/customer_background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
+/* Headings */
+#customer-section h3,
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
+/* Paragraphs & Labels */
+#customer-section p,
 p {
     font-size: 1.1rem;
     color: #ffffff;
@@ -211,16 +82,40 @@ span {
     color: #ffffff;
 }
 
+/* Buttons */
+#editDetailsBtn,
+#addCardDetailsBtn,
+#reviewForm button {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
 button:hover {
     background-color: rgba(255, 255, 255, 0.4);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
-textarea {
+/* Review Form */
+#reviewForm {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#reviewForm select,
+#reviewForm textarea {
     width: 100%;
-    height: 100px;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px 0;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -228,22 +123,97 @@ textarea {
     color: #ffffff;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    resize: vertical;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+/* Card & Bought Items Sections */
+#card-details-section,
+#bought-items {
+    margin-top: 1rem;
+    padding: 15px;
+    background-color: rgba(233, 236, 239, 0.4);
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    border: none;
-    color: #ffffff;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-div#customer-section{
-    margin-top: 10px;
-    padding-right: 300px;
+#card-details-section p,
+#bought-items p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.7);
+    backdrop-filter: blur(10px);
+    color: #ffc107;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+}
+
+/* ================= Responsive Queries ================= */
+
+@media (max-width: 991px) {
+    main.container {
+        padding: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    #editDetailsBtn,
+    #addCardDetailsBtn,
+    #reviewForm button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #reviewForm select,
+    #reviewForm textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main.container {
+        padding: 1rem;
+    }
+
+    #customer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    #customer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    p,
+    #reviewForm select,
+    #reviewForm textarea,
+    button {
+        font-size: 0.9rem;
+    }
 }
