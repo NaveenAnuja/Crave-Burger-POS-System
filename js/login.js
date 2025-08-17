@@ -107,3 +107,38 @@ document.getElementById('btnLogin').addEventListener('click', function () {
         swal("Login Failed", "Invalid email or password!", "error");
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const eyeIcons = document.querySelectorAll('.eye-icon');
+
+    eyeIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            const passwordInput = icon.previousElementSibling;
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.innerHTML = '<i class="fa-solid fa-eye"></i>'; 
+            } else {
+                passwordInput.type = 'password';
+                icon.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'; 
+            }
+        });
+    });
+});
+
+const showLogin = document.getElementById('showLogin');
+const showSignup = document.getElementById('showSignup');
+const signupForm = document.getElementById('signup-form');
+const loginForm = document.getElementById('login-form');
+
+showLogin.addEventListener('click', (e) => {
+    e.preventDefault();
+    signupForm.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+});
+
+showSignup.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.classList.add('hidden');
+    signupForm.classList.remove('hidden');
+});

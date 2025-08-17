@@ -53,6 +53,31 @@ input {
     color: white;
 }
 
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box; 
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-90%);
+    cursor: pointer;
+    color: #888;
+}
+
+.eye-icon:hover {
+    color: #ffffff;
+}
+
 button {
     padding: 10px;
     font-size: 16px;
